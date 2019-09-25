@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Remove the spin-buttons for number input -->
-    <style>
+      <style>
+        /* Remove the spin-buttons for number input */
         input::-webkit-outer-spin-button,
         input::-webkit-inner-spin-button {
             /* display: none; <- Crashes Chrome on hover */
@@ -12,6 +12,11 @@
 
         input[type=number] {
             -moz-appearance:textfield; /* Firefox */
+        }
+
+        /* Loader gif */
+        #loader, #results {
+            display: none;
         }
     </style>
     <!-- Required meta tags -->
@@ -54,9 +59,9 @@
                           </div>
                       </form>
                       <!-- LOADER HERE -->
-                      <!-- <div id="loader">
+                      <div id="loader">
                           <img src="img/loading.gif" alt="">
-                      </div> -->
+                      </div>
                       <!-- RESULTS -->
                       <div id="results" class="pt-4">
                             <h5>Results</h5>
